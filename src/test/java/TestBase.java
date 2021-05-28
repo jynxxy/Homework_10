@@ -14,7 +14,7 @@ public class TestBase {
     }
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
         ChromeOptions options = new ChromeOptions();
         WebDriverManager.chromedriver().setup();
         options.addArguments("start-maximized");
@@ -22,7 +22,7 @@ public class TestBase {
     }
 
     @AfterEach
-    public void cleanUp(){
+    public void cleanUp() {
         driver.quit();
     }
 }
